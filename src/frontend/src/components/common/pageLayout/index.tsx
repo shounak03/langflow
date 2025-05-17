@@ -3,6 +3,7 @@ import { useCustomNavigate } from "@/customization/hooks/use-custom-navigate";
 import { Button } from "../../ui/button";
 import { Separator } from "../../ui/separator";
 import ForwardedIconComponent from "../genericIconComponent";
+import ChatSupport from "../chatSupport";
 
 export default function PageLayout({
   title,
@@ -61,6 +62,7 @@ export default function PageLayout({
         </div>
         <div className="flex flex-1 p-6 pt-7">{children}</div>
       </div>
+      <ChatSupport />
     </div>
   );
 }

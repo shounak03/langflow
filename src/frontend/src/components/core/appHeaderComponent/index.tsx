@@ -17,6 +17,7 @@ import { useEffect, useRef, useState } from "react";
 import { AccountMenu } from "./components/AccountMenu";
 import FlowMenu from "./components/FlowMenu";
 import LangflowCounts from "./components/langflow-counts";
+import ChatSupport from "@/components/common/chatSupport";
 
 export default function AppHeader(): JSX.Element {
   const notificationCenter = useAlertStore((state) => state.notificationCenter);
@@ -144,6 +145,7 @@ export default function AppHeader(): JSX.Element {
         />
 
         <div className="flex">
+          <ChatSupport />
           <CustomAccountMenu />
         </div>
       </div>

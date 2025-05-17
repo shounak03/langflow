@@ -63,7 +63,7 @@ Setup and validate the initial environment by running:
 make init
 ```
 
-This will set up the development environment by installing backend and frontend dependencies, building the frontend static files, and initializing the project. It runs `make install_backend`, `make install_frontend`, `make build_frontend`, and finally `uv run langflow run` to start the application.
+This will set up the development environment by installing backend and frontend dependencies, building the frontend static files, and initializing the project. It runs `c`, `make install_frontend`, `make build_frontend`, and finally `uv run langflow run` to start the application.
 
 Once the application is running, the command output should look similar to:
 
